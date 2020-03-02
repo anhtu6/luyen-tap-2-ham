@@ -1,13 +1,10 @@
-console.log(typeof parseInt('h'));
+let n= prompt('input');
+let array1 =n.split('');
+function check(array) {
 
-let n = prompt('Nhap ki tu vao');
-function checkNumber(a) {
-    if (isNaN(parseInt(a) )) {
-        alert('khong la so');
-        return false;
-    } else {
-        alert('la so');
-        return true;
+    for (let i=0;i<array.length;i++){
+        if (isNaN(parseInt(array[i]))) return false;
     }
 }
-checkNumber(n);
+if (check(array1)==false) {alert('not a')}
+else {alert('la so')};
